@@ -1,1 +1,317 @@
-/* TODO */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+main,
+.header-wrapper,
+.footer-wrapper {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.header-wrapper {
+  padding: 0 10px;
+}
+
+.logo {
+  width: max-content;
+
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 32px;
+}
+
+.first__word {
+  font-weight: 700;
+}
+
+.second__word {
+  font-weight: 400;
+}
+
+.first__letter {
+  color: #ff0000;
+}
+
+header {
+  position: sticky;
+
+  top: 0;
+
+  z-index: 1;
+
+  height: max-content;
+
+  padding: 2px 0 10px 0;
+
+  border-bottom: 1px solid #afafaf;
+
+  background: #fff;
+}
+
+main {
+  margin-bottom: 100px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.grid {
+  margin: -10px;
+
+  list-style: none;
+}
+
+.cell {
+  display: inline-block;
+
+  padding: 10px;
+}
+
+.tablet {
+  width: 150px;
+  height: 260px;
+
+  padding: 1px;
+
+  box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.5);
+}
+
+.photo-wrapper {
+  width: 100%;
+  height: 150px;
+}
+
+.photo {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+.description {
+  overflow: hidden;
+
+  height: 35%;
+
+  padding-top: 5px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.name {
+  display: block;
+
+  overflow: hidden;
+
+  max-height: 23px;
+
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+
+  line-height: 23px;
+
+  text-overflow: ellipsis;
+
+  white-space: pre;
+
+  word-wrap: break-word;
+}
+
+.name-wrapper {
+  padding: 2px 0 5px 0;
+}
+
+.info {
+  display: block;
+
+  overflow: hidden;
+
+  max-height: 16px;
+
+  color: #444;
+
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 12px;
+
+  line-height: 16px;
+
+  text-overflow: ellipsis;
+  white-space: pre;
+
+  word-wrap: break-word;
+}
+
+.about {
+  color: #666;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 12px;
+}
+
+.about-wrapper {
+  display: none;
+}
+
+.tablet:hover {
+  transform: scale(1.05);
+
+  box-shadow: 0 0 0.8rem 0 rgba(0, 0, 0, 0.8);
+
+  cursor: pointer;
+}
+
+footer a {
+  color: #4c4cd8;
+}
+
+.logo-wrapper a {
+  color: #000;
+  text-decoration: none;
+}
+
+.name-wrapper a {
+  color: #000;
+  text-decoration: none;
+}
+
+.name-wrapper a:hover {
+  color: #f00;
+  text-decoration: none;
+}
+
+.photo:hover {
+  cursor: zoom-in;
+}
+
+.scale {
+  transition: 2s;
+}
+
+.category:hover {
+  color: #000;
+  font-weight: 700;
+}
+
+.info-wrapper {
+  margin-bottom: 10px;
+}
+
+#view_mode {
+  display: none;
+}
+
+.mode_list {
+  display: block;
+
+  width: 24px;
+  height: 24px;
+
+  margin: 10px 0;
+
+  background-image: url('./img/icon/th-list-solid.svg');
+  background-size: 24px;
+
+  cursor: pointer;
+}
+
+#view_mode:checked ~ .mode_list {
+  display: block;
+
+  width: 24px;
+  height: 24px;
+
+  margin: 10px 0;
+
+  background-image: url('./img/icon/th-solid.svg');
+  background-size: 24px;
+
+  cursor: pointer;
+}
+
+#view_mode:checked ~ .grid .cell {
+  display: block;
+}
+
+#view_mode:checked ~ .grid .tablet {
+  width: 640px;
+  height: max-content;
+}
+
+#view_mode:checked ~ .grid .tablet:hover {
+  transform: none;
+}
+
+#view_mode:checked ~ .grid .photo-wrapper {
+  height: 640px;
+}
+
+#view_mode:checked ~ .grid .about-wrapper {
+  display: block;
+
+  margin: 0 0 20px 0;
+}
+
+#view_mode:checked ~ .grid .info-wrapper {
+  margin-bottom: 20px;
+}
+
+#view_mode:checked ~ .grid .about {
+  font-size: 20px;
+}
+
+#view_mode:checked ~ .grid .name {
+  max-height: 35px;
+
+  font-size: 30px;
+
+  line-height: 35px;
+}
+
+#view_mode:checked ~ .grid .info {
+  max-height: 24px;
+
+  font-size: 20px;
+
+  line-height: 24px;
+}
+
+html,
+body {
+  background: rgb(255, 255, 255);
+}
+
+#view_mode:checked ~ .grid .name-wrapper {
+  padding: 6px 0 15px 0;
+}
+
+.footer-wrapper {
+  padding: 10px;
+
+  font-family: Arial, 'PT Sans Narrow', sans-serif;
+  font-size: 14px;
+}
+
+address {
+  font-style: normal;
+}
+
+footer {
+  position: fixed;
+
+  bottom: 0;
+
+  z-index: -1;
+
+  width: 100%;
+  height: 80px;
+
+  border-top: 1px solid #afafaf;
+
+  background: #fff;
+}
+
+.copyright {
+  float: right;
+
+  margin-top: -18px;
+}
