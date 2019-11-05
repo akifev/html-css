@@ -1,11 +1,456 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>02-cats-for-all</title>
-    <link rel="stylesheet" href="./index.css">
+    <link href="css/index.css" rel="stylesheet" />
+    <link href="css/media.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <!-- TODO -->
+    <header>
+      <div class="header-wrapper">
+        <div class="logo-wrapper">
+          <a href="">
+            <h1 class="logo">
+              Мур Маркет
+            </h1>
+          </a>
+        </div>
+        <div class="user-wrapper">
+          <a href="">
+            <div class="user"></div>
+          </a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="main-wrapper">
+        <div class="filter-header01">
+          <span>Возраст</span>
+        </div>
+        <input id="range01" max="60" min="0" step="1" type="range" value="0" />
+        <input id="range02" max="60" min="0" step="1" type="range" value="60" />
+        <div class="filter-header03">
+          <span>От 0 до 60 мес.</span>
+        </div>
+        <div class="filter-header02">
+          <span>Порода</span>
+        </div>
+        <input checked="" id="show-all" type="checkbox" />
+        <label class="show-all" for="show-all">Показать все</label>
+        <br />
+        <input id="filter01-button" type="checkbox" />
+        <label class="filter01-button" for="filter01-button">Порода #1</label>
+        <br />
+        <input id="filter02-button" type="checkbox" />
+        <label class="filter02-button" for="filter02-button">Порода #2</label>
+        <br />
+        <input id="filter03-button" type="checkbox" />
+        <label class="filter03-button" for="filter03-button">Порода #3</label>
+        <div class="content-wrapper">
+          <ul class="grid">
+            <li class="num2">
+              <article class="tablet">
+                <div class="photo-wrapper">
+                  <img alt="Alice" class="photo" src="img/cat/Alice.jpg" />
+                </div>
+                <div class="description">
+                  <div class="name-wrapper">
+                    <a href="">
+                      <h2 class="name" title="Алиса">Алиса</h2>
+                    </a>
+                  </div>
+                  <div class="info-wrapper">
+                    <p class="info"><span class="category">Возраст</span>: 3 месяца</p>
+                    <p class="info"><span class="category">Порода</span>: #2</p>
+                    <br />
+                    <p class="info"><span class="category">Статус</span>: ищет хозяина</p>
+                  </div>
+                </div>
+                <div class="about-wrapper">
+                  <div class="about">
+                    <p>Lorem ipsum.</p>
+                    <br />
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse illo iusto
+                      nesciunt qui, sint totam. At aut beatae blanditiis commodi cumque deserunt
+                      dolorum eius et, itaque laudantium magni molestiae, nam natus nesciunt non
+                      officia praesentium quae qui quidem repellat, sint suscipit voluptate
+                      voluptatum? Harum ipsam quam voluptatum! Illum, incidunt ipsam!
+                    </p>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li class="num1">
+              <article class="tablet">
+                <div class="photo-wrapper">
+                  <img alt="Ash" class="photo" src="img/cat/Ash.jpg" />
+                </div>
+                <div class="description">
+                  <div class="name-wrapper">
+                    <a href="">
+                      <h2 class="name" title="Эш">Эш</h2>
+                    </a>
+                  </div>
+                  <div class="info-wrapper">
+                    <p class="info"><span class="category">Возраст</span>: 1 год</p>
+                    <p class="info"><span class="category">Порода</span>: #1</p>
+                    <br />
+                    <p class="info"><span class="category">Статус</span>: ищет хозяина</p>
+                  </div>
+                </div>
+                <div class="about-wrapper">
+                  <div class="about">
+                    <p>Lorem.</p>
+                    <br />
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet culpa fugit
+                      impedit laborum magni mollitia, nesciunt nisi odio quibusdam saepe temporibus,
+                      voluptatibus. Animi consequuntur debitis, dolorum iusto libero veniam. Ad
+                      commodi consequuntur debitis dolorem ea earum eos error exercitationem fugiat
+                      incidunt itaque iure maxime nihil nostrum numquam odit praesentium provident
+                      quidem reiciendis, reprehenderit sunt veritatis vero voluptatum. Amet atque
+                      beatae, corporis cupiditate distinctio doloremque facere facilis incidunt iure
+                      libero odit porro similique totam. Consequuntur ducimus sit unde. Ab at,
+                      blanditiis deserunt dignissimos doloremque, doloribus ea eligendi esse est,
+                      natus neque numquam obcaecati quam quas quasi quia quis quod rem sed?
+                    </p>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li class="num2">
+              <article class="tablet">
+                <div class="photo-wrapper">
+                  <img alt="Bella" class="photo" src="img/cat/Bella.jpg" />
+                </div>
+                <div class="description">
+                  <div class="name-wrapper">
+                    <a href="">
+                      <h2 class="name" title="Белла">Белла</h2>
+                    </a>
+                  </div>
+                  <div class="info-wrapper">
+                    <p class="info"><span class="category">Возраст</span>: 11 месяцев</p>
+                    <p class="info"><span class="category">Порода</span>: #2</p>
+                    <br />
+                    <p class="info"><span class="category">Статус</span>: ищет хозяина</p>
+                  </div>
+                </div>
+                <div class="about-wrapper">
+                  <div class="about">
+                    <p>Lorem.</p>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur
+                      cupiditate quod soluta.
+                    </p>
+                    <p>
+                      Alias consequuntur harum ipsum labore porro ratione? A eius pariatur provident
+                      velit.
+                    </p>
+                    <p>
+                      Exercitationem hic impedit magni sapiente sequi similique, voluptate.
+                      Architecto dolorum quos repudiandae!
+                    </p>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li class="num3">
+              <article class="tablet">
+                <div class="photo-wrapper">
+                  <img alt="Groovy" class="photo" src="img/cat/Groovy.jpg" />
+                </div>
+                <div class="description">
+                  <div class="name-wrapper">
+                    <a href="">
+                      <h2 class="name" title="Груви">Груви</h2>
+                    </a>
+                  </div>
+                  <div class="info-wrapper">
+                    <p class="info"><span class="category">Возраст</span>: 2 года</p>
+                    <p class="info"><span class="category">Порода</span>: #3</p>
+                    <br />
+                    <p class="info"><span class="category">Статус</span>: ищет хозяина</p>
+                  </div>
+                </div>
+                <div class="about-wrapper">
+                  <div class="about">
+                    <p>Lorem ipsum dolor sit.</p>
+                    <br />
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae fugiat
+                      impedit officia quia repellat, velit. Culpa et quibusdam similique veritatis!
+                    </p>
+                    <br />
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, inventore!
+                    </p>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquam
+                      at cumque deleniti dicta dolorum error facilis ipsum, maiores maxime minus
+                      odit porro possimus, quia quibusdam quidem recusandae temporibus voluptatum?
+                    </p>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li class="num2">
+              <article class="tablet">
+                <div class="photo-wrapper">
+                  <img alt="Henry" class="photo" src="img/cat/Henry.jpg" />
+                </div>
+                <div class="description">
+                  <div class="name-wrapper">
+                    <a href="">
+                      <h2 class="name" title="Генри">Генри</h2>
+                    </a>
+                  </div>
+                  <div class="info-wrapper">
+                    <p class="info"><span class="category">Возраст</span>: 2 года</p>
+                    <p class="info"><span class="category">Порода</span>: #2</p>
+                    <br />
+                    <p class="info"><span class="category">Статус</span>: ищет хозяина</p>
+                  </div>
+                </div>
+                <div class="about-wrapper">
+                  <div class="about">
+                    <p>Lorem ipsum dolor sit.</p>
+                    <br />
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae fugiat
+                      impedit officia quia repellat, velit. Culpa et quibusdam similique veritatis!
+                    </p>
+                    <br />
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, inventore!
+                    </p>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquam
+                      at cumque deleniti dicta dolorum error facilis ipsum, maiores maxime minus
+                      odit porro possimus, quia quibusdam quidem recusandae temporibus voluptatum?
+                    </p>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li class="num3">
+              <article class="tablet">
+                <div class="photo-wrapper">
+                  <img alt="Percy" class="photo" src="img/cat/Percy.jpg" />
+                </div>
+                <div class="description">
+                  <div class="name-wrapper">
+                    <a href="">
+                      <h2 class="name" title="Перси">Перси</h2>
+                    </a>
+                  </div>
+                  <div class="info-wrapper">
+                    <p class="info"><span class="category">Возраст</span>: 1.5 года</p>
+                    <p class="info"><span class="category">Порода</span>: #3</p>
+                    <br />
+                    <p class="info"><span class="category">Статус</span>: ищет хозяина</p>
+                  </div>
+                </div>
+                <div class="about-wrapper">
+                  <div class="about">
+                    <p>Lorem ipsum dolor sit.</p>
+                    <br />
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae fugiat
+                      impedit officia quia repellat, velit. Culpa et quibusdam similique veritatis!
+                    </p>
+                    <br />
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, inventore!
+                    </p>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquam
+                      at cumque deleniti dicta dolorum error facilis ipsum, maiores maxime minus
+                      odit porro possimus, quia quibusdam quidem recusandae temporibus voluptatum?
+                    </p>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li class="num1">
+              <article class="tablet">
+                <div class="photo-wrapper">
+                  <img alt="Perl" class="photo" src="img/cat/Perl.jpg" />
+                </div>
+                <div class="description">
+                  <div class="name-wrapper">
+                    <a href="">
+                      <h2 class="name" title="Перл">Перл</h2>
+                    </a>
+                  </div>
+                  <div class="info-wrapper">
+                    <p class="info"><span class="category">Возраст</span>: 10 месяцев</p>
+                    <p class="info"><span class="category">Порода</span>: #1</p>
+                    <br />
+                    <p class="info"><span class="category">Статус</span>: ищет хозяина</p>
+                  </div>
+                </div>
+                <div class="about-wrapper">
+                  <div class="about">
+                    <p>Lorem ipsum dolor sit.</p>
+                    <br />
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae fugiat
+                      impedit officia quia repellat, velit. Culpa et quibusdam similique veritatis!
+                    </p>
+                    <br />
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, inventore!
+                    </p>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquam
+                      at cumque deleniti dicta dolorum error facilis ipsum, maiores maxime minus
+                      odit porro possimus, quia quibusdam quidem recusandae temporibus voluptatum?
+                    </p>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li class="num3">
+              <article class="tablet">
+                <div class="photo-wrapper">
+                  <img alt="Sheily" class="photo" src="img/cat/Sheily.jpg" />
+                </div>
+                <div class="description">
+                  <div class="name-wrapper">
+                    <a href="">
+                      <h2 class="name" title="Шейли">Шейли</h2>
+                    </a>
+                  </div>
+                  <div class="info-wrapper">
+                    <p class="info"><span class="category">Возраст</span>: 8 месяцев</p>
+                    <p class="info"><span class="category">Порода</span>: #3</p>
+                    <br />
+                    <p class="info"><span class="category">Статус</span>: ищет хозяина</p>
+                  </div>
+                </div>
+                <div class="about-wrapper">
+                  <div class="about">
+                    <p>Lorem ipsum dolor sit.</p>
+                    <br />
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae fugiat
+                      impedit officia quia repellat, velit. Culpa et quibusdam similique veritatis!
+                    </p>
+                    <br />
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, inventore!
+                    </p>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquam
+                      at cumque deleniti dicta dolorum error facilis ipsum, maiores maxime minus
+                      odit porro possimus, quia quibusdam quidem recusandae temporibus voluptatum?
+                    </p>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li class="num3">
+              <article class="tablet">
+                <div class="photo-wrapper">
+                  <img alt="Sindy" class="photo" src="img/cat/Sindy.jpg" />
+                </div>
+                <div class="description">
+                  <div class="name-wrapper">
+                    <a href="">
+                      <h2 class="name" title="Синди">Синди</h2>
+                    </a>
+                  </div>
+                  <div class="info-wrapper">
+                    <p class="info"><span class="category">Возраст</span>: 3 года</p>
+                    <p class="info"><span class="category">Порода</span>: #3</p>
+                    <br />
+                    <p class="info"><span class="category">Статус</span>: ищет хозяина</p>
+                  </div>
+                </div>
+                <div class="about-wrapper">
+                  <div class="about">
+                    <p>Lorem ipsum dolor sit.</p>
+                    <br />
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae fugiat
+                      impedit officia quia repellat, velit. Culpa et quibusdam similique veritatis!
+                    </p>
+                    <br />
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, inventore!
+                    </p>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquam
+                      at cumque deleniti dicta dolorum error facilis ipsum, maiores maxime minus
+                      odit porro possimus, quia quibusdam quidem recusandae temporibus voluptatum?
+                    </p>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li class="num1">
+              <article class="tablet">
+                <div class="photo-wrapper">
+                  <img alt="Zona" class="photo" src="img/cat/Zona.jpg" />
+                </div>
+                <div class="description">
+                  <div class="name-wrapper">
+                    <a href="">
+                      <h2 class="name" title="Зона">Зона</h2>
+                    </a>
+                  </div>
+                  <div class="info-wrapper">
+                    <p class="info"><span class="category">Возраст</span>: 5 лет</p>
+                    <p class="info"><span class="category">Порода</span>: #1</p>
+                    <br />
+                    <p class="info"><span class="category">Статус</span>: ищет хозяина</p>
+                  </div>
+                </div>
+                <div class="about-wrapper">
+                  <div class="about">
+                    <p>Lorem ipsum dolor sit.</p>
+                    <br />
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae fugiat
+                      impedit officia quia repellat, velit. Culpa et quibusdam similique veritatis!
+                    </p>
+                    <br />
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, inventore!
+                    </p>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquam
+                      at cumque deleniti dicta dolorum error facilis ipsum, maiores maxime minus
+                      odit porro possimus, quia quibusdam quidem recusandae temporibus voluptatum?
+                    </p>
+                  </div>
+                </div>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-wrapper">
+        <address>
+          <p class="links-header">Напишите нам:</p>
+          <ul class="links">
+            <li><a href="mailto:babulya@mail.ru">babulya@mail.ru</a></li>
+            <li><a href="mailto:vnuchok@gmail.com">vnuchok@gmail.com</a></li>
+          </ul>
+        </address>
+        <div class="copyright">
+          <p>&#169; 2018 ООО &#171;<a href="">Бабушкины котятки</a>&#187;</p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
