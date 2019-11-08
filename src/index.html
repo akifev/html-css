@@ -1,10 +1,81 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>03-pimp-your-cat</title>
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="css/index.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Roboto:300,400,500,700,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    <article class="c-cat-form">
+      <section class="l-cat-form__main">
+        <h1 class="c-cat-form__title">Прокачай кота!</h1>
+        <h3 class="c-cat-form__desc">
+          Подпишись на расылку нашего тренера и получи индивидуально подобранную программу
+          тренировок<br />
+          для своего питомца
+        </h3>
+        <form class="l-form-interaction-list" action="" method="post">
+          <div class="l-form-interaction-list__item">
+            <span class="l-span">Кот возрастом</span>
+            <select class="c-cat-form__age-selector" name="age" id="age">
+              <option value="1">до года</option>
+              <option value="2">до 2 лет</option>
+              <option value="3">до 5 лет</option>
+              <option value="4">от 5 лет</option>
+            </select>
+            <span class="l-span">и весом</span>
+            <input class="c-cat-form__weight-input" type="number" step="0.5" value="4.5" />
+            <span class="l-span">кг</span>
+          </div>
+          <div class="l-form-interaction-list__item">
+            <input
+              class="c-cat-form__program-input"
+              type="radio"
+              name="program"
+              id="program01"
+            /><label class="c-cat-form__program-label" for="program01">
+              Набор массы
+            </label>
+            <input
+              class="c-cat-form__program-input"
+              type="radio"
+              name="program"
+              id="program02"
+            /><label class="c-cat-form__program-label" for="program02">Похудение</label>
+            <input
+              class="c-cat-form__program-input"
+              type="radio"
+              name="program"
+              id="program03"
+              checked=""
+            /><label class="c-cat-form__program-label" for="program03">Не знаю</label>
+          </div>
+          <div class="l-form-interaction-list__item">
+            <input class="c-cat-form__email-input" type="email" placeholder="Email (ваш)" />
+          </div>
+          <div class="l-form-interaction-list__item l-cat-form-interaction-list-item">
+            <input class="c-cat-form__spam-input" type="checkbox" id="spam" /><label
+              class="c-cat-form__spam-label"
+              for="spam"
+              >Хочу спам</label
+            >
+            <div class="c-cat-form__custom-spam-input"></div>
+          </div>
+          <div class="l-form-interaction-list__item">
+            <button class="c-cat-form__submit-button" type="submit">Подписаться</button>
+          </div>
+        </form>
+      </section>
+      <aside class="l-cat-form__decor">
+        <div class="c-cat-form__decor-line"></div>
+        <div class="l-cat-form__decor-photo">
+          <img class="c-cat-form__decor-photo" src="img/cat.jpg" alt="cat" />
+        </div>
+      </aside>
+    </article>
   </body>
 </html>
