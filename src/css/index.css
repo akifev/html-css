@@ -9,6 +9,8 @@ body {
 }
 
 .c-cat-form {
+  position: relative;
+
   display: grid;
   grid-gap: 20px;
   grid-template-columns: 2fr 1fr;
@@ -184,21 +186,22 @@ body {
   display: block;
 }
 
-.c-cat-form__submit-button {
-  width: 100%;
-
-  padding: 10px 0;
-
+.c-button {
   border: none;
   border-radius: 5px;
 
-  background: #ffef52;
-
-  box-shadow: 0 0 0.5rem 0 rgba(183, 183, 183, 0.5);
   color: #555;
   font-family: 'Open Sans', 'Roboto', sans-serif;
   font-weight: 600;
   outline: 0;
+}
+
+.c-cat-form__submit-button {
+  width: 100%;
+  padding: 10px 0;
+
+  background: #ffef52;
+  box-shadow: 0 0 0.5rem 0 rgba(183, 183, 183, 0.5);
 }
 
 .c-cat-form__submit-button:hover,
@@ -258,4 +261,16 @@ body {
   height: 100%;
 
   object-fit: cover;
+}
+
+.c-close-button {
+  position: absolute;
+  top: 9px;
+  right: 10px;
+
+  width: 25px;
+  height: 25px;
+
+  background: #fff;
+  font-size: 20px;
 }
