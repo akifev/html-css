@@ -116,7 +116,9 @@ body {
 
   justify-content: space-around;
 
-  width: 30%;
+  width: 32%;
+
+  padding-left: 0;
 
   background: #dae4fa;
 }
