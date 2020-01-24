@@ -1,348 +1,349 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8" />
-    <title>Мур Маркет</title>
-    <link href="./index.css" rel="stylesheet" />
-    <link
-      href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header>
-      <div class="header-wrapper">
-        <div class="logo-wrapper">
-          <a href="">
-            <h1 class="logo">
-              <span class="first__word"><span class="first__letter">М</span>ур </span>
-              <span class="second__word">Маркет</span>
-            </h1>
-          </a>
+<head>
+  <meta charset="utf-8"/>
+  <title>Мур Маркет</title>
+  <link href="./normalize.css" rel="stylesheet"/>
+  <link href="./index.css" rel="stylesheet"/>
+  <link
+    href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+<header>
+  <div class="header-wrapper">
+    <div class="logo-wrapper">
+      <a href="">
+        <h1 class="logo">
+          <span class="first__word"><span class="first__letter">М</span>ур </span>
+          <span class="second__word">Маркет</span>
+        </h1>
+      </a>
+    </div>
+  </div>
+</header>
+<main>
+  <input id="view_cat_mode_switcher" type="checkbox"/>
+  <label class="mode_list" for="view_cat_mode_switcher"></label>
+  <ul class="grid">
+    <li class="cell">
+      <article class="tablet">
+        <div class="photo-wrapper">
+          <img alt="Alice" class="photo" src="img/cat/Alice.jpg"/>
         </div>
-      </div>
-    </header>
-    <main>
-      <input id="view_mode" type="checkbox" />
-      <label class="mode_list" for="view_mode"></label>
-      <ul class="grid">
-        <li class="cell">
-          <article class="tablet">
-            <div class="photo-wrapper">
-              <img alt="Alice" class="photo" src="img/cat/Alice.jpg" />
-            </div>
-            <div class="description">
-              <div class="name-wrapper">
-                <a href="">
-                  <h2 class="name" title="Алиса">Алиса</h2>
-                </a>
-              </div>
-              <div class="info-wrapper">
-                <p class="info"><span class="category">Возраст</span>: 3 месяца</p>
-                <p class="info"><span class="category">Порода</span>: снежный барс</p>
-                <p class="info"><span class="category">Статус</span>: ищет хозяина</p>
-              </div>
-              <div class="about-wrapper">
-                <p class="about">
-                  Указывает, что элемент абсолютно позиционирован, при этом другие элементы
-                  отображаются на веб-странице словно абсолютно позиционированного элемента и нет.
-                  Положение элемента задается свойствами left, top, right и bottom, также на
-                  положение влияет значение свойства position родительского элемента. Так, если у
-                  родителя значение position установлено как static или родителя нет, то отсчет
-                  координат ведется от края окна браузера. Если у родителя значение position задано
-                  как fixed, relative или absolute, то отсчет координат ведется от края
-                  родительского элемента.
-                </p>
-              </div>
-            </div>
-          </article>
-        </li>
-        <li class="cell">
-          <article class="tablet">
-            <div class="photo-wrapper"><img alt="Ash" class="photo" src="img/cat/Ash.jpg" /></div>
-            <div class="description">
-              <div class="name-wrapper">
-                <a href="">
-                  <h2 class="name" title="Эш">Эш</h2>
-                </a>
-              </div>
-              <div class="info-wrapper">
-                <p class="info"><span class="category">Возраст</span>: 3 месяца</p>
-                <p class="info"><span class="category">Порода</span>: снежный барс</p>
-                <p class="info"><span class="category">Статус</span>: ищет хозяина</p>
-              </div>
-              <div class="about-wrapper">
-                <p class="about">
-                  Указывает, что элемент абсолютно позиционирован, при этом другие элементы
-                  отображаются на веб-странице словно абсолютно позиционированного элемента и нет.
-                  Положение элемента задается свойствами left, top, right и bottom, также на
-                  положение влияет значение свойства position родительского элемента. Так, если у
-                  родителя значение position установлено как static или родителя нет, то отсчет
-                  координат ведется от края окна браузера. Если у родителя значение position задано
-                  как fixed, relative или absolute, то отсчет координат ведется от края
-                  родительского элемента.
-                </p>
-              </div>
-            </div>
-          </article>
-        </li>
-        <li class="cell">
-          <article class="tablet">
-            <div class="photo-wrapper">
-              <img alt="Bella" class="photo" src="img/cat/Bella.jpg" />
-            </div>
-            <div class="description">
-              <div class="name-wrapper">
-                <a href="">
-                  <h2 class="name" title="Белла">Белла</h2>
-                </a>
-              </div>
-              <div class="info-wrapper">
-                <p class="info"><span class="category">Возраст</span>: 3 месяца</p>
-                <p class="info"><span class="category">Порода</span>: снежный барс</p>
-                <p class="info"><span class="category">Статус</span>: ищет хозяина</p>
-              </div>
-              <div class="about-wrapper">
-                <p class="about">
-                  Указывает, что элемент абсолютно позиционирован, при этом другие элементы
-                  отображаются на веб-странице словно абсолютно позиционированного элемента и нет.
-                  Положение элемента задается свойствами left, top, right и bottom, также на
-                  положение влияет значение свойства position родительского элемента. Так, если у
-                  родителя значение position установлено как static или родителя нет, то отсчет
-                  координат ведется от края окна браузера. Если у родителя значение position задано
-                  как fixed, relative или absolute, то отсчет координат ведется от края
-                  родительского элемента.
-                </p>
-              </div>
-            </div>
-          </article>
-        </li>
-        <li class="cell">
-          <article class="tablet">
-            <div class="photo-wrapper">
-              <img alt="Groovy" class="photo" src="img/cat/Groovy.jpg" />
-            </div>
-            <div class="description">
-              <div class="name-wrapper">
-                <a href="">
-                  <h2 class="name" title="Груви">Груви</h2>
-                </a>
-              </div>
-              <div class="info-wrapper">
-                <p class="info"><span class="category">Возраст</span>: 3 месяца</p>
-                <p class="info"><span class="category">Порода</span>: снежный барс</p>
-                <p class="info"><span class="category">Статус</span>: ищет хозяина</p>
-              </div>
-              <div class="about-wrapper">
-                <p class="about">
-                  Указывает, что элемент абсолютно позиционирован, при этом другие элементы
-                  отображаются на веб-странице словно абсолютно позиционированного элемента и нет.
-                  Положение элемента задается свойствами left, top, right и bottom, также на
-                  положение влияет значение свойства position родительского элемента. Так, если у
-                  родителя значение position установлено как static или родителя нет, то отсчет
-                  координат ведется от края окна браузера. Если у родителя значение position задано
-                  как fixed, relative или absolute, то отсчет координат ведется от края
-                  родительского элемента.
-                </p>
-              </div>
-            </div>
-          </article>
-        </li>
-        <li class="cell">
-          <article class="tablet">
-            <div class="photo-wrapper">
-              <img alt="Henry" class="photo" src="img/cat/Henry.jpg" />
-            </div>
-            <div class="description">
-              <div class="name-wrapper">
-                <a href="">
-                  <h2 class="name" title="Генри">Генри</h2>
-                </a>
-              </div>
-              <div class="info-wrapper">
-                <p class="info"><span class="category">Возраст</span>: 3 месяца</p>
-                <p class="info"><span class="category">Порода</span>: снежный барс</p>
-                <p class="info"><span class="category">Статус</span>: ищет хозяина</p>
-              </div>
-              <div class="about-wrapper">
-                <p class="about">
-                  Указывает, что элемент абсолютно позиционирован, при этом другие элементы
-                  отображаются на веб-странице словно абсолютно позиционированного элемента и нет.
-                  Положение элемента задается свойствами left, top, right и bottom, также на
-                  положение влияет значение свойства position родительского элемента. Так, если у
-                  родителя значение position установлено как static или родителя нет, то отсчет
-                  координат ведется от края окна браузера. Если у родителя значение position задано
-                  как fixed, relative или absolute, то отсчет координат ведется от края
-                  родительского элемента.
-                </p>
-              </div>
-            </div>
-          </article>
-        </li>
-        <li class="cell">
-          <article class="tablet">
-            <div class="photo-wrapper">
-              <img alt="Percy" class="photo" src="img/cat/Percy.jpg" />
-            </div>
-            <div class="description">
-              <div class="name-wrapper">
-                <a href="">
-                  <h2 class="name" title="Перси">Перси</h2>
-                </a>
-              </div>
-              <div class="info-wrapper">
-                <p class="info"><span class="category">Возраст</span>: 3 месяца</p>
-                <p class="info"><span class="category">Порода</span>: снежный барс</p>
-                <p class="info"><span class="category">Статус</span>: ищет хозяина</p>
-              </div>
-              <div class="about-wrapper">
-                <p class="about">
-                  Указывает, что элемент абсолютно позиционирован, при этом другие элементы
-                  отображаются на веб-странице словно абсолютно позиционированного элемента и нет.
-                  Положение элемента задается свойствами left, top, right и bottom, также на
-                  положение влияет значение свойства position родительского элемента. Так, если у
-                  родителя значение position установлено как static или родителя нет, то отсчет
-                  координат ведется от края окна браузера. Если у родителя значение position задано
-                  как fixed, relative или absolute, то отсчет координат ведется от края
-                  родительского элемента.
-                </p>
-              </div>
-            </div>
-          </article>
-        </li>
-        <li class="cell">
-          <article class="tablet">
-            <div class="photo-wrapper"><img alt="Perl" class="photo" src="img/cat/Perl.jpg" /></div>
-            <div class="description">
-              <div class="name-wrapper">
-                <a href="">
-                  <h2 class="name" title="Перл">Перл</h2>
-                </a>
-              </div>
-              <div class="info-wrapper">
-                <p class="info"><span class="category">Возраст</span>: 3 месяца</p>
-                <p class="info"><span class="category">Порода</span>: снежный барс</p>
-                <p class="info"><span class="category">Статус</span>: ищет хозяина</p>
-              </div>
-              <div class="about-wrapper">
-                <p class="about">
-                  Указывает, что элемент абсолютно позиционирован, при этом другие элементы
-                  отображаются на веб-странице словно абсолютно позиционированного элемента и нет.
-                  Положение элемента задается свойствами left, top, right и bottom, также на
-                  положение влияет значение свойства position родительского элемента. Так, если у
-                  родителя значение position установлено как static или родителя нет, то отсчет
-                  координат ведется от края окна браузера. Если у родителя значение position задано
-                  как fixed, relative или absolute, то отсчет координат ведется от края
-                  родительского элемента.
-                </p>
-              </div>
-            </div>
-          </article>
-        </li>
-        <li class="cell">
-          <article class="tablet">
-            <div class="photo-wrapper">
-              <img alt="Sheily" class="photo" src="img/cat/Sheily.jpg" />
-            </div>
-            <div class="description">
-              <div class="name-wrapper">
-                <a href="">
-                  <h2 class="name" title="Шейли">Шейли</h2>
-                </a>
-              </div>
-              <div class="info-wrapper">
-                <p class="info"><span class="category">Возраст</span>: 3 месяца</p>
-                <p class="info"><span class="category">Порода</span>: снежный барс</p>
-                <p class="info"><span class="category">Статус</span>: ищет хозяина</p>
-              </div>
-              <div class="about-wrapper">
-                <p class="about">
-                  Указывает, что элемент абсолютно позиционирован, при этом другие элементы
-                  отображаются на веб-странице словно абсолютно позиционированного элемента и нет.
-                  Положение элемента задается свойствами left, top, right и bottom, также на
-                  положение влияет значение свойства position родительского элемента. Так, если у
-                  родителя значение position установлено как static или родителя нет, то отсчет
-                  координат ведется от края окна браузера. Если у родителя значение position задано
-                  как fixed, relative или absolute, то отсчет координат ведется от края
-                  родительского элемента.
-                </p>
-              </div>
-            </div>
-          </article>
-        </li>
-        <li class="cell">
-          <article class="tablet">
-            <div class="photo-wrapper">
-              <img alt="Sindy" class="photo" src="img/cat/Sindy.jpg" />
-            </div>
-            <div class="description">
-              <div class="name-wrapper">
-                <a href="">
-                  <h2 class="name" title="Синди">Синди</h2>
-                </a>
-              </div>
-              <div class="info-wrapper">
-                <p class="info"><span class="category">Возраст</span>: 3 месяца</p>
-                <p class="info"><span class="category">Порода</span>: снежный барс</p>
-                <p class="info"><span class="category">Статус</span>: ищет хозяина</p>
-              </div>
-              <div class="about-wrapper">
-                <p class="about">
-                  Указывает, что элемент абсолютно позиционирован, при этом другие элементы
-                  отображаются на веб-странице словно абсолютно позиционированного элемента и нет.
-                  Положение элемента задается свойствами left, top, right и bottom, также на
-                  положение влияет значение свойства position родительского элемента. Так, если у
-                  родителя значение position установлено как static или родителя нет, то отсчет
-                  координат ведется от края окна браузера. Если у родителя значение position задано
-                  как fixed, relative или absolute, то отсчет координат ведется от края
-                  родительского элемента.
-                </p>
-              </div>
-            </div>
-          </article>
-        </li>
-        <li class="cell">
-          <article class="tablet">
-            <div class="photo-wrapper"><img alt="Zona" class="photo" src="img/cat/Zona.jpg" /></div>
-            <div class="description">
-              <div class="name-wrapper">
-                <a href="">
-                  <h2 class="name" title="Зона">Зона</h2>
-                </a>
-              </div>
-              <div class="info-wrapper">
-                <p class="info"><span class="category">Возраст</span>: 3 месяца</p>
-                <p class="info"><span class="category">Порода</span>: снежный барс</p>
-                <p class="info"><span class="category">Статус</span>: ищет хозяина</p>
-              </div>
-              <div class="about-wrapper">
-                <p class="about">
-                  Указывает, что элемент абсолютно позиционирован, при этом другие элементы
-                  отображаются на веб-странице словно абсолютно позиционированного элемента и нет.
-                  Положение элемента задается свойствами left, top, right и bottom, также на
-                  положение влияет значение свойства position родительского элемента. Так, если у
-                  родителя значение position установлено как static или родителя нет, то отсчет
-                  координат ведется от края окна браузера. Если у родителя значение position задано
-                  как fixed, relative или absolute, то отсчет координат ведется от края
-                  родительского элемента.
-                </p>
-              </div>
-            </div>
-          </article>
-        </li>
-      </ul>
-    </main>
-    <footer>
-      <div class="footer-wrapper">
-        <address>
-          <p>Наши контакты:</p>
-          <p>&#9993; <a href="mailto:babulya@mail.ru">babulya@mail.ru</a></p>
-          <p>&#9993; <a href="mailto:vnuchok@gmail.com">vnuchok@gmail.com</a></p>
-        </address>
-        <div class="copyright">
-          <p>&#169; 2018 ООО &#171;<a href="">Бабушкины котятки</a>&#187;</p>
+        <div class="description">
+          <div class="name-wrapper">
+            <a href="">
+              <h2 class="name" title="Алиса">Алиса</h2>
+            </a>
+          </div>
+          <div class="info-wrapper">
+            <p class="info"><span class="category">Возраст</span>: 3 месяца</p>
+            <p class="info"><span class="category">Порода</span>: снежный барс</p>
+            <p class="info"><span class="category">Статус</span>: ищет хозяина</p>
+          </div>
+          <div class="about-wrapper">
+            <p class="about">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est et impedit ipsa optio
+              quas quod rem sint soluta. Culpa et minima nemo, praesentium repellat sint veniam.
+              Animi dicta dolorem earum explicabo fuga fugiat impedit incidunt iusto maxime modi,
+              mollitia optio pariatur quam, quasi quis recusandae repellat temporibus totam velit
+              voluptatum. Aspernatur at commodi earum eligendi, et fuga itaque iure laboriosam
+              magni, molestiae quisquam sint tempore voluptatem? Amet debitis doloribus, ducimus
+              eaque ex facere fugit hic inventore laborum perferendis quibusdam quis repellat
+              voluptatibus. Cum, itaque nesciunt obcaecati officia quod similique voluptatum?
+            </p>
+          </div>
         </div>
-      </div>
-    </footer>
-  </body>
+      </article>
+    </li>
+    <li class="cell">
+      <article class="tablet">
+        <div class="photo-wrapper"><img alt="Ash" class="photo" src="img/cat/Ash.jpg"/></div>
+        <div class="description">
+          <div class="name-wrapper">
+            <a href="">
+              <h2 class="name" title="Эш">Эш</h2>
+            </a>
+          </div>
+          <div class="info-wrapper">
+            <p class="info"><span class="category">Возраст</span>: 3 месяца</p>
+            <p class="info"><span class="category">Порода</span>: снежный барс</p>
+            <p class="info"><span class="category">Статус</span>: ищет хозяина</p>
+          </div>
+          <div class="about-wrapper">
+            <p class="about">
+              Указывает, что элемент абсолютно позиционирован, при этом другие элементы
+              отображаются на веб-странице словно абсолютно позиционированного элемента и нет.
+              Положение элемента задается свойствами left, top, right и bottom, также на
+              положение влияет значение свойства position родительского элемента. Так, если у
+              родителя значение position установлено как static или родителя нет, то отсчет
+              координат ведется от края окна браузера. Если у родителя значение position задано
+              как fixed, relative или absolute, то отсчет координат ведется от края
+              родительского элемента.
+            </p>
+          </div>
+        </div>
+      </article>
+    </li>
+    <li class="cell">
+      <article class="tablet">
+        <div class="photo-wrapper">
+          <img alt="Bella" class="photo" src="img/cat/Bella.jpg"/>
+        </div>
+        <div class="description">
+          <div class="name-wrapper">
+            <a href="">
+              <h2 class="name" title="Белла">Белла</h2>
+            </a>
+          </div>
+          <div class="info-wrapper">
+            <p class="info"><span class="category">Возраст</span>: 3 месяца</p>
+            <p class="info"><span class="category">Порода</span>: снежный барс</p>
+            <p class="info"><span class="category">Статус</span>: ищет хозяина</p>
+          </div>
+          <div class="about-wrapper">
+            <p class="about">
+              Указывает, что элемент абсолютно позиционирован, при этом другие элементы
+              отображаются на веб-странице словно абсолютно позиционированного элемента и нет.
+              Положение элемента задается свойствами left, top, right и bottom, также на
+              положение влияет значение свойства position родительского элемента. Так, если у
+              родителя значение position установлено как static или родителя нет, то отсчет
+              координат ведется от края окна браузера. Если у родителя значение position задано
+              как fixed, relative или absolute, то отсчет координат ведется от края
+              родительского элемента.
+            </p>
+          </div>
+        </div>
+      </article>
+    </li>
+    <li class="cell">
+      <article class="tablet">
+        <div class="photo-wrapper">
+          <img alt="Groovy" class="photo" src="img/cat/Groovy.jpg"/>
+        </div>
+        <div class="description">
+          <div class="name-wrapper">
+            <a href="">
+              <h2 class="name" title="Груви">Груви</h2>
+            </a>
+          </div>
+          <div class="info-wrapper">
+            <p class="info"><span class="category">Возраст</span>: 3 месяца</p>
+            <p class="info"><span class="category">Порода</span>: снежный барс</p>
+            <p class="info"><span class="category">Статус</span>: ищет хозяина</p>
+          </div>
+          <div class="about-wrapper">
+            <p class="about">
+              Указывает, что элемент абсолютно позиционирован, при этом другие элементы
+              отображаются на веб-странице словно абсолютно позиционированного элемента и нет.
+              Положение элемента задается свойствами left, top, right и bottom, также на
+              положение влияет значение свойства position родительского элемента. Так, если у
+              родителя значение position установлено как static или родителя нет, то отсчет
+              координат ведется от края окна браузера. Если у родителя значение position задано
+              как fixed, relative или absolute, то отсчет координат ведется от края
+              родительского элемента.
+            </p>
+          </div>
+        </div>
+      </article>
+    </li>
+    <li class="cell">
+      <article class="tablet">
+        <div class="photo-wrapper">
+          <img alt="Henry" class="photo" src="img/cat/Henry.jpg"/>
+        </div>
+        <div class="description">
+          <div class="name-wrapper">
+            <a href="">
+              <h2 class="name" title="Генри">Генри</h2>
+            </a>
+          </div>
+          <div class="info-wrapper">
+            <p class="info"><span class="category">Возраст</span>: 3 месяца</p>
+            <p class="info"><span class="category">Порода</span>: снежный барс</p>
+            <p class="info"><span class="category">Статус</span>: ищет хозяина</p>
+          </div>
+          <div class="about-wrapper">
+            <p class="about">
+              Указывает, что элемент абсолютно позиционирован, при этом другие элементы
+              отображаются на веб-странице словно абсолютно позиционированного элемента и нет.
+              Положение элемента задается свойствами left, top, right и bottom, также на
+              положение влияет значение свойства position родительского элемента. Так, если у
+              родителя значение position установлено как static или родителя нет, то отсчет
+              координат ведется от края окна браузера. Если у родителя значение position задано
+              как fixed, relative или absolute, то отсчет координат ведется от края
+              родительского элемента.
+            </p>
+          </div>
+        </div>
+      </article>
+    </li>
+    <li class="cell">
+      <article class="tablet">
+        <div class="photo-wrapper">
+          <img alt="Percy" class="photo" src="img/cat/Percy.jpg"/>
+        </div>
+        <div class="description">
+          <div class="name-wrapper">
+            <a href="">
+              <h2 class="name" title="Перси">Перси</h2>
+            </a>
+          </div>
+          <div class="info-wrapper">
+            <p class="info"><span class="category">Возраст</span>: 3 месяца</p>
+            <p class="info"><span class="category">Порода</span>: снежный барс</p>
+            <p class="info"><span class="category">Статус</span>: ищет хозяина</p>
+          </div>
+          <div class="about-wrapper">
+            <p class="about">
+              Указывает, что элемент абсолютно позиционирован, при этом другие элементы
+              отображаются на веб-странице словно абсолютно позиционированного элемента и нет.
+              Положение элемента задается свойствами left, top, right и bottom, также на
+              положение влияет значение свойства position родительского элемента. Так, если у
+              родителя значение position установлено как static или родителя нет, то отсчет
+              координат ведется от края окна браузера. Если у родителя значение position задано
+              как fixed, relative или absolute, то отсчет координат ведется от края
+              родительского элемента.
+            </p>
+          </div>
+        </div>
+      </article>
+    </li>
+    <li class="cell">
+      <article class="tablet">
+        <div class="photo-wrapper"><img alt="Perl" class="photo" src="img/cat/Perl.jpg"/></div>
+        <div class="description">
+          <div class="name-wrapper">
+            <a href="">
+              <h2 class="name" title="Перл">Перл</h2>
+            </a>
+          </div>
+          <div class="info-wrapper">
+            <p class="info"><span class="category">Возраст</span>: 3 месяца</p>
+            <p class="info"><span class="category">Порода</span>: снежный барс</p>
+            <p class="info"><span class="category">Статус</span>: ищет хозяина</p>
+          </div>
+          <div class="about-wrapper">
+            <p class="about">
+              Указывает, что элемент абсолютно позиционирован, при этом другие элементы
+              отображаются на веб-странице словно абсолютно позиционированного элемента и нет.
+              Положение элемента задается свойствами left, top, right и bottom, также на
+              положение влияет значение свойства position родительского элемента. Так, если у
+              родителя значение position установлено как static или родителя нет, то отсчет
+              координат ведется от края окна браузера. Если у родителя значение position задано
+              как fixed, relative или absolute, то отсчет координат ведется от края
+              родительского элемента.
+            </p>
+          </div>
+        </div>
+      </article>
+    </li>
+    <li class="cell">
+      <article class="tablet">
+        <div class="photo-wrapper">
+          <img alt="Sheily" class="photo" src="img/cat/Sheily.jpg"/>
+        </div>
+        <div class="description">
+          <div class="name-wrapper">
+            <a href="">
+              <h2 class="name" title="Шейли">Шейли</h2>
+            </a>
+          </div>
+          <div class="info-wrapper">
+            <p class="info"><span class="category">Возраст</span>: 3 месяца</p>
+            <p class="info"><span class="category">Порода</span>: снежный барс</p>
+            <p class="info"><span class="category">Статус</span>: ищет хозяина</p>
+          </div>
+          <div class="about-wrapper">
+            <p class="about">
+              Указывает, что элемент абсолютно позиционирован, при этом другие элементы
+              отображаются на веб-странице словно абсолютно позиционированного элемента и нет.
+              Положение элемента задается свойствами left, top, right и bottom, также на
+              положение влияет значение свойства position родительского элемента. Так, если у
+              родителя значение position установлено как static или родителя нет, то отсчет
+              координат ведется от края окна браузера. Если у родителя значение position задано
+              как fixed, relative или absolute, то отсчет координат ведется от края
+              родительского элемента.
+            </p>
+          </div>
+        </div>
+      </article>
+    </li>
+    <li class="cell">
+      <article class="tablet">
+        <div class="photo-wrapper">
+          <img alt="Sindy" class="photo" src="img/cat/Sindy.jpg"/>
+        </div>
+        <div class="description">
+          <div class="name-wrapper">
+            <a href="">
+              <h2 class="name" title="Синди">Синди</h2>
+            </a>
+          </div>
+          <div class="info-wrapper">
+            <p class="info"><span class="category">Возраст</span>: 3 месяца</p>
+            <p class="info"><span class="category">Порода</span>: снежный барс</p>
+            <p class="info"><span class="category">Статус</span>: ищет хозяина</p>
+          </div>
+          <div class="about-wrapper">
+            <p class="about">
+              Указывает, что элемент абсолютно позиционирован, при этом другие элементы
+              отображаются на веб-странице словно абсолютно позиционированного элемента и нет.
+              Положение элемента задается свойствами left, top, right и bottom, также на
+              положение влияет значение свойства position родительского элемента. Так, если у
+              родителя значение position установлено как static или родителя нет, то отсчет
+              координат ведется от края окна браузера. Если у родителя значение position задано
+              как fixed, relative или absolute, то отсчет координат ведется от края
+              родительского элемента.
+            </p>
+          </div>
+        </div>
+      </article>
+    </li>
+    <li class="cell">
+      <article class="tablet">
+        <div class="photo-wrapper"><img alt="Zona" class="photo" src="img/cat/Zona.jpg"/></div>
+        <div class="description">
+          <div class="name-wrapper">
+            <a href="">
+              <h2 class="name" title="Зона">Зона</h2>
+            </a>
+          </div>
+          <div class="info-wrapper">
+            <p class="info"><span class="category">Возраст</span>: 3 месяца</p>
+            <p class="info"><span class="category">Порода</span>: снежный барс</p>
+            <p class="info"><span class="category">Статус</span>: ищет хозяина</p>
+          </div>
+          <div class="about-wrapper">
+            <p class="about">
+              Указывает, что элемент абсолютно позиционирован, при этом другие элементы
+              отображаются на веб-странице словно абсолютно позиционированного элемента и нет.
+              Положение элемента задается свойствами left, top, right и bottom, также на
+              положение влияет значение свойства position родительского элемента. Так, если у
+              родителя значение position установлено как static или родителя нет, то отсчет
+              координат ведется от края окна браузера. Если у родителя значение position задано
+              как fixed, relative или absolute, то отсчет координат ведется от края
+              родительского элемента.
+            </p>
+          </div>
+        </div>
+      </article>
+    </li>
+  </ul>
+</main>
+<footer>
+  <div class="footer-wrapper">
+    <address>
+      <p>Наши контакты:</p>
+      <p>&#9993; <a href="mailto:babulya@mail.ru">babulya@mail.ru</a></p>
+      <p>&#9993; <a href="mailto:vnuchok@gmail.com">vnuchok@gmail.com</a></p>
+    </address>
+    <div class="copyright">
+      <p>&#169; 2018 ООО &#171;<a href="">Бабушкины котятки</a>&#187;</p>
+    </div>
+  </div>
+</footer>
+</body>
 </html>
