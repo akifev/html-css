@@ -3,10 +3,158 @@
   <head>
     <meta charset="utf-8">
     <title>04-murpassport</title>
-    <link rel="stylesheet" href="./index.css">
+    <link href="./index.css" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-  <div width="100" height="1000"> </div>
-  <script type="text/javascript" src="./simulation.js"> </script>
+    <header>
+      <div class="header-wrapper">
+        <div class="logo-wrapper">
+          <a href="">
+            <h1 class="logo">
+              Мур Маркет
+            </h1>
+          </a>
+        </div>
+        <div class="user-wrapper">
+          <a href="">
+            <div class="user"></div>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="main-wrapper">
+        <div class="navigation-wrapper">
+          <nav class="navigation">
+            <h4 class="navigation__title">
+              МЕНЮ
+            </h4>
+            <ul class="navigation-list">
+              <li class="navigation-list__item">
+                <a class="navigation__link" href="#info">
+                  Данные
+                </a>
+              </li>
+              <li class="navigation-list__item">
+                <a class="navigation__link" href="#med">
+                  Прививки
+                </a>
+              </li>
+              <li class="navigation-list__item">
+                <a class="navigation__link" href="#gallery">
+                  Галерея
+                </a>
+              </li>
+              <li class="navigation-list__item">
+                <a class="navigation__link" href="#feedback">
+                  Обратная связь
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="content-wrapper">
+          <ul class="grid">
+            <li class="grid-item" id="info">
+              <article class="tablet">
+                <div class="photo-wrapper">
+                  <img alt="Groovy" class="photo" src="img/Groovy.jpg"/>
+                </div>
+                <div class="description">
+                  <div class="name-wrapper">
+                    <a href="">
+                      <h2 class="name" title="Груви">Груви</h2>
+                    </a>
+                  </div>
+                  <div class="info-wrapper">
+                    <p class="info"><span class="category">Возраст</span>: 3 месяца</p>
+                    <p class="info"><span class="category">Порода</span>: #2</p>
+                    <br/>
+                    <p class="info"><span class="category">Статус</span>: ищет хозяина</p>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li class="grid-item" id="med">
+              <article class="tablet">
+                <div class="description">
+                  <div class="name-wrapper">
+                    <a href="">
+                      <h2 class="name" title="Прививки">Прививки</h2>
+                    </a>
+                  </div>
+                  <div class="info-wrapper">
+                    <p class="info"><span class="category">От чувства собственной важности</span>:
+                      да
+                    </p>
+                    <p class="info"><span class="category">От нелюбви к людям</span>: да</p>
+                    <p class="info"><span class="category">Для лучшей охоты за мышами</span>: нет
+                    </p>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li class="grid-item" id="gallery">
+              <article class="tablet">
+                <div></div>
+                <div class="description">
+                  <div class="name-wrapper">
+                    <a href="">
+                      <h2 class="name" title="Галерея">Галерея</h2>
+                    </a>
+                  </div>
+                  <div class="gallery">
+                    <div class="photo-wrapper">
+                      <img alt="photo1" class="photo" src="img/Groovy.jpg"/>
+                    </div>
+                    <div class="photo-wrapper">
+                      <img alt="photo2" class="photo" src="img/cat.jpg"/>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li class="grid-item" id="feedback">
+              <article class="tablet">
+                <div></div>
+                <div class="description">
+                  <div class="name-wrapper">
+                    <a href="">
+                      <h2 class="name" title="Обратная связь">Обратная связь</h2>
+                    </a>
+                  </div>
+                  <form class="form" id="form">
+                    <textarea class="form-comment-input" placeholder="Ваш комментарий"></textarea>
+                    <input class="form-email-input" placeholder="Ваш e-mail" required type="email">
+                    <input class="form-submit" type="submit" value="ОТПРАВИТЬ">
+                  </form>
+                </div>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </div>
+      </div>
+    </main>
+    <script src="./simulation.js" type="text/javascript"></script>
+    <footer class="footer">
+      <div class="footer-wrapper">
+        <address>
+          <p class="links-header">Напишите нам:</p>
+          <ul class="links">
+            <li><a href="mailto:babulya@mail.ru">babulya@mail.ru</a></li>
+            <li><a href="mailto:vnuchok@gmail.com">vnuchok@gmail.com</a></li>
+          </ul>
+        </address>
+        <div class="copyright">
+          <p>&#169; 2018 ООО &#171;<a href="">Бабушкины котятки</a>&#187;</p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
