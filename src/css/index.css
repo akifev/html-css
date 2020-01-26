@@ -1,8 +1,6 @@
 * {
   --h: calc(100% - 53px);
   --w: 1080px;
-  margin: 0;
-  padding: 0;
 }
 
 .header-wrapper,
@@ -29,6 +27,8 @@ html {
 
 body {
   height: var(--h);
+  margin: 0;
+  padding: 0;
 
   font-family: 'Open Sans', sans-serif;
   font-size: 12px;
@@ -52,14 +52,19 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  padding: 0;
 }
 
 .logo-wrapper {
   padding-top: 4px;
   padding-bottom: 8px;
+  padding-left: 7px;
 }
 
 .logo {
+  margin: 0;
+
   color: #000;
   font-size: 28px;
   font-weight: 400;
@@ -102,7 +107,9 @@ main {
 /* CONTENT */
 
 .content-wrapper {
-  width: calc(var(--w) - 160px - 20px);
+  --content-width: 900px;
+
+  width: calc(var(--content-width));
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -112,6 +119,9 @@ main {
   grid-auto-rows: 350px;
   grid-gap: 10px;
   grid-template-columns: 1fr 1fr;
+
+  margin: 0;
+  padding-left: 10px;
 
   list-style: none;
 }
@@ -123,7 +133,7 @@ main {
 
   padding: 10px;
 
-  box-shadow: 0 0 0.5rem 0 rgba(68, 68, 68, 0.5);
+  box-shadow: 0 0 5px 0 rgba(68, 68, 68, 0.5);
 }
 
 .tablet {
@@ -157,16 +167,14 @@ main {
   overflow: hidden;
 
   max-height: 26px;
+  margin: 0;
+  padding: 0;
 
   font-size: 20px;
   font-weight: 400;
-
   line-height: 26px;
-
   text-overflow: ellipsis;
-
   white-space: pre;
-
   word-wrap: break-word;
 }
 
@@ -176,20 +184,17 @@ main {
 
 .info {
   display: block;
-
   overflow: hidden;
 
   max-height: 16px;
+  margin: 0;
+  padding: 0;
 
   color: #444;
-
   font-size: 12px;
-
   line-height: 16px;
-
   text-overflow: ellipsis;
   white-space: pre;
-
   word-wrap: break-word;
 }
 
@@ -200,8 +205,6 @@ main {
   padding-top: 10px;
 
   border-top: 1px solid #aaa;
-
-  /*display: none;*/
 }
 
 .about {
@@ -233,7 +236,7 @@ main {
 .num1:hover,
 .num2:hover,
 .num3:hover {
-  box-shadow: 0 0 1rem 0 rgb(68, 68, 68);
+  box-shadow: 0 0 10px 0 rgb(68, 68, 68);
 
   cursor: pointer;
 }
@@ -272,13 +275,13 @@ label {
 
   border-radius: 4px;
 
-  box-shadow: 0 0 0.5rem 0 rgba(68, 68, 68, 0.5);
+  box-shadow: 0 0 5px 0 rgba(68, 68, 68, 0.5);
 }
 
 label:hover {
   transform: scale(1.02);
 
-  box-shadow: 0 0 1rem 0 rgb(68, 68, 68);
+  box-shadow: 0 0 10px 0 rgb(68, 68, 68);
 
   cursor: pointer;
 }
@@ -394,10 +397,14 @@ footer {
 address {
   display: flex;
 
+  margin-left: 10px;
+
   font-style: normal;
 }
 
 .links {
+  padding: 0;
+
   list-style-type: none;
 }
 
@@ -425,4 +432,8 @@ address {
 
 .links-header:before {
   content: '✉ ';
+}
+
+.copyright p {
+  margin-bottom: 0;
 }
