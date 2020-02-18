@@ -1,10 +1,3 @@
-main,
-.header-wrapper,
-.footer-wrapper {
-  max-width: 100%;
-  margin: 0 auto;
-}
-
 .header-wrapper {
   margin: -20px 0;
   padding: 0 10px;
@@ -22,8 +15,8 @@ main,
   font-weight: 400;
 }
 
-.first__letter {
-  color: #ff0000;
+.logo:first-letter {
+  color: #f00;
 }
 
 header {
@@ -41,8 +34,8 @@ header {
 }
 
 main {
-  margin-bottom: 100px;
   padding-right: 10px;
+  padding-bottom: 100px;
   padding-left: 10px;
 }
 
@@ -141,12 +134,13 @@ main {
 .tablet:hover {
   transform: scale(1.05);
 
-  box-shadow: 0 0 0.8rem 0 rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.8);
   cursor: pointer;
 }
 
-footer a {
+.footer a {
   color: #4c4cd8;
+  text-decoration: none;
 }
 
 .logo-wrapper a {
@@ -161,7 +155,6 @@ footer a {
 
 .name-wrapper a:hover {
   color: #f00;
-  text-decoration: none;
 }
 
 .photo:hover {
@@ -256,7 +249,15 @@ footer a {
 
 html,
 body {
+  height: 100%;
+
   background: #fff;
+}
+
+.body-wrapper {
+  position: relative;
+
+  min-height: 100%;
 }
 
 #view_cat_mode_switcher:checked ~ .grid .name-wrapper {
@@ -270,17 +271,22 @@ body {
   font-size: 14px;
 }
 
-address {
+.address {
   font-style: normal;
 }
 
-footer {
-  position: fixed;
+.address p {
+  margin: 0;
+  padding: 1px 0;
+}
+
+.footer {
+  position: absolute;
   bottom: 0;
-  z-index: -1;
+  left: 0;
 
   width: 100%;
-  height: 80px;
+  height: 74px;
 
   border-top: 1px solid #afafaf;
 }
@@ -289,4 +295,9 @@ footer {
   float: right;
 
   margin-top: -18px;
+}
+
+.copyright p {
+  margin: 0;
+  padding: 0;
 }
