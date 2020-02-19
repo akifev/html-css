@@ -93,6 +93,8 @@ main {
 
 .main-wrapper {
   display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
 }
 
 /* NAVIGATION */
@@ -230,12 +232,33 @@ main {
   outline: 0;
 }
 
+.c-button {
+  border: none;
+  border-radius: 5px;
+
+  color: #555;
+  font-family: 'Open Sans', 'Roboto', sans-serif;
+  font-weight: 600;
+  outline: 0;
+}
+
 .form-submit {
   width: 100%;
   padding: 10px 0;
 
   background: #ffef52;
   box-shadow: 0 0 5px 0 rgba(183, 183, 183, 0.5);
+}
+
+.form-submit:hover,
+.form-submit:focus {
+  background: #ffe533;
+  cursor: pointer;
+}
+
+.form-submit:active {
+  background: #ffe015;
+  cursor: pointer;
 }
 
 /* FOOTER */
