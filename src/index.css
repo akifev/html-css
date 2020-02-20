@@ -161,14 +161,14 @@ p {
   background-size: 50px;
 }
 
-.action-like {
-  background-image: url('resourses/icon/heart-solid.svg');
+.action-skip {
+  background-image: url('resourses/icon/heart-broken-solid.svg');
 }
 
 .action-star {
   background-image: url('resourses/icon/star-solid.svg');
 }
 
-.action-skip {
-  background-image: url('resourses/icon/heart-broken-solid.svg');
+.action-like {
+  background-image: url('resourses/icon/heart-solid.svg');
 }

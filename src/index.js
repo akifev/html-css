@@ -3,28 +3,28 @@ const guineaPigs = [
     id: 0,
     imgSrc:
       'https://images.unsplash.com/photo-1512087499053-023f060e2cea?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80',
-    name: 'Дима',
+    name: 'Алексей',
     description: '1.5 года, Очень любит обниматься'
   },
   {
     id: 1,
     imgSrc:
       'https://images.unsplash.com/photo-1512483652399-7a1f99aa0dd3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1355&q=80',
-    name: 'Альберт',
+    name: 'Иван',
     description: '2 года, Настоящий мачо'
   },
   {
     id: 2,
     imgSrc:
       'https://images.unsplash.com/photo-1526346093155-a601c2cbe917?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80',
-    name: 'Пупа и Лупа',
+    name: 'Артём и Вова',
     description: 'По 3 года, Ищут третьего'
   },
   {
     id: 3,
     imgSrc:
       'https://images.unsplash.com/photo-1558360370-c828347734d6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1394&q=80',
-    name: 'Алекс',
+    name: 'Велик',
     description: '3.5 года, Очень стеснительный'
   }
 ];
