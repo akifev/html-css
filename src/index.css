@@ -1,1 +1,174 @@
-/* TODO */
+:root {
+  --o-xs: 8px;
+  --o-sm: 16px;
+  --o-md: 24px;
+  --o-lg: 32px;
+
+  --c-primary: white;
+  --c-accent: #f88379;
+  --c-secondary: #494949;
+
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+
+  border: 0;
+
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.page__heading {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 10000;
+
+  height: 50px;
+
+  background: var(--c-accent);
+
+  color: white;
+
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 50px;
+  text-align: center;
+}
+
+.page__content {
+  z-index: 1000;
+
+  display: flex;
+
+  overflow: scroll;
+  flex-flow: column nowrap;
+  align-items: center;
+
+  width: 100%;
+  height: 100%;
+
+  padding: calc(var(--o-sm) + 50px) var(--o-sm) var(--o-sm) var(--o-sm);
+
+  background: var(--c-primary);
+}
+
+.image__container {
+  position: relative;
+
+  overflow: hidden;
+
+  width: 100%;
+
+  padding-top: 100%;
+
+  border-radius: 10px;
+}
+
+.image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: auto;
+
+  min-width: 100%;
+
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.name {
+  align-self: flex-start;
+
+  margin-top: var(--o-xs);
+
+  font-family: 'Montserrat', sans-serif;
+  font-size: 28px;
+}
+
+.description {
+  align-self: flex-start;
+
+  margin: var(--o-xs) 0 var(--o-sm) 0;
+
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+}
+
+.actions {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+
+  width: 100%;
+  height: 100%;
+}
+
+.action {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 70px;
+  height: 70px;
+
+  border-radius: 50%;
+
+  background: #ffffff;
+  box-shadow: 8px 8px 60px #d1d1d1, -8px -8px 60px #ffffff;
+}
+
+.action:active {
+  border-radius: 50%;
+
+  background: #ffffff;
+  box-shadow: inset 8px 8px 60px #d1d1d1, inset -8px -8px 60px #ffffff;
+}
+
+.action__icon {
+  width: 50px;
+  height: 50px;
+
+  background-size: 50px;
+}
+
+.action-like {
+  background-image: url('resourses/icon/heart-solid.svg');
+}
+
+.action-star {
+  background-image: url('resourses/icon/star-solid.svg');
+}
+
+.action-skip {
+  background-image: url('resourses/icon/heart-broken-solid.svg');
+}
