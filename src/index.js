@@ -53,13 +53,49 @@ class PigTinder {
   }
 }
 
+function swipe(action) {
+  const pig = document.getElementById('image');
+
+  switch (action) {
+    case 'left': {
+      pig.style.transform = `translateX(-500%) translateY(0%) rotate(-180deg)`;
+      break;
+    }
+    case 'up': {
+      pig.style.transform = `translateX(0) translateY(-1000%)`;
+      break;
+    }
+    case 'right': {
+      pig.style.transform = `translateX(500%) translateY(0%) rotate(180deg)`;
+      break;
+    }
+  }
+
+  setTimeout(function() {
+    pig.style.transform = `translate(-50%, -50%)`;
+  }, 700);
+}
+
 function onStart() {
   const app = new PigTinder();
   app.getGuineaPig();
-  document.querySelectorAll('.action').forEach(node => {
-    node.addEventListener('click', () => {
+  document.getElementById('like').addEventListener('click', () => {
+    swipe('left');
+    setTimeout(function() {
       app.getGuineaPig();
-    });
+    }, 500);
+  });
+  document.getElementById('star').addEventListener('click', () => {
+    swipe('up');
+    setTimeout(function() {
+      app.getGuineaPig();
+    }, 500);
+  });
+  document.getElementById('skip').addEventListener('click', () => {
+    swipe('right');
+    setTimeout(function() {
+      app.getGuineaPig();
+    }, 500);
   });
 }
 
