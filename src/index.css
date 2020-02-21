@@ -49,13 +49,9 @@ header {
   background: #fff;
 }
 
-.header-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
 .logo-wrapper {
+  float: left;
+
   padding: 4px 0 8px 0;
 }
 
@@ -71,11 +67,16 @@ header {
   color: #f00;
 }
 
+.user-wrapper {
+  float: right;
+
+  margin-right: -10px;
+  padding-top: 12px;
+}
+
 .user {
   width: 24px;
   height: 24px;
-
-  margin-right: -20px;
 
   background-image: url('img/icon/user-solid.svg');
   background-size: 24px;
@@ -91,17 +92,13 @@ main {
   background: #fff;
 }
 
-.main-wrapper {
-  display: flex;
-  align-items: stretch;
-  justify-content: flex-start;
-}
-
 /* NAVIGATION */
 
 .navigation-wrapper {
-  width: 150px;
-  margin: 10px 10px 10px 0;
+  position: fixed;
+
+  width: 100px;
+  margin: 0 10px 10px 0;
   padding: 10px 10px 0 10px;
 
   box-shadow: 2px 0 5px 0 rgba(183, 183, 183, 0.5);
@@ -123,12 +120,17 @@ main {
 
 /* CONTENT */
 
+.content-wrapper {
+  box-sizing: content-box;
+  margin-left: 130px;
+}
+
 .grid {
   display: grid;
   grid-auto-rows: max-content;
   grid-gap: 10px;
 
-  width: 880px;
+  width: 100%;
 
   margin: 10px 0;
   padding-left: 10px;
